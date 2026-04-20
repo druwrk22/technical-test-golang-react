@@ -29,3 +29,7 @@ WRH Parking adalah manajemen parkir truck warehouse dengan denah interaktif berb
 <img src="public/screenshot/Screenshot_3.png" width="740">
 <img src="public/screenshot/Screenshot_4.png" width="740">
 <img src="public/screenshot/Screenshot_5.png" width="740">
+
+### Improve UX
+<img src="public/screenshot/Screenshot_6.png" width="740">
+<p>Menambahkan indikator v agar pengguna mengetahui bahwa durasi timer bisa di pilih / select.</p>
