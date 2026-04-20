@@ -23,6 +23,19 @@ REST API sederhana untuk mengelola tugas dengan fitur CRUD, pagination, filter, 
 - go mod tidy
 - go run . (auto generate table)
 
+## Validators
+- POST -> /tasks
+    - title: required
+    - description: required
+    - status: default("pending")
+    - due_date: required (tidak bisa backdate)
+- PUT -> /tasks/:id
+    - title: required
+    - description: required
+    - status: opsional
+    - due_date: required (tidak bisa backdate)
+-DELETE -> /tasks/:id
+
 ## Screenshot
 <img src="public/img/ss_1.png" width="550">
 <img src="public/img/ss_2.png" width="550">

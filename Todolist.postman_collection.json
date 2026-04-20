@@ -1,0 +1,138 @@
+{
+  "info": {
+    "_postman_id": "036a9153-20bc-42d9-95a6-d386d376e70b",
+    "name": "Todolist",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54105361",
+    "_collection_link": "https://go.postman.co/collection/54105361-036a9153-20bc-42d9-95a6-d386d376e70b?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Tasks",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/tasks",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "tasks"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Task",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\": \"Belajar Golang 4\",\r\n    \"description\": \"Golang asik 4\",\r\n    \"status\": \"completed\",\r\n    \"due_date\": \"2026-04-20\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/tasks",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "tasks"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Tasks By ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/tasks/50e5db5b-d386-453e-80b9-fd65c6fbc84b",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "tasks",
+            "50e5db5b-d386-453e-80b9-fd65c6fbc84b"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Tasks",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\": \"Belajar Golang 3\",\r\n    \"description\": \"Golang asik 3\",\r\n    \"status\": \"completed\",\r\n    \"due_date\": \"2026-04-20\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/tasks/8668b2aa-9c00-4713-a3d7-b28e221e4444",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "tasks",
+            "8668b2aa-9c00-4713-a3d7-b28e221e4444"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Task",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n   \"title\": \"Task 1 Diperbarui\",\r\n   \"description\": \"Task 1 Description Diperbarui\",\r\n   \"status\": \"completed\",\r\n   \"due_date\": \"2026-04-17\"\r\n}"
+        },
+        "url": {
+          "raw": "localhost:8080/tasks/3bb08d8a-ccb1-4894-96de-fe7646ff2f8e",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "tasks",
+            "3bb08d8a-ccb1-4894-96de-fe7646ff2f8e"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
