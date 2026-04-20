@@ -1,5 +1,7 @@
 # technical-test-golang-react
 Technical Test Project Frontend (React) dan Backend (Golang).
 
-## Note
-Bila ingin test postman sudah saya berikan collection postman nya dengan nama file `Todolist.postman_collection.json`
+## Postman Collection
+Tersedia file collection Postman untuk mempermudah testing:
+* **File Name**: `Todolist.postman_collection.json`
+* **Cara Pakai**: Buka Postman > Import > Pilih file tersebut.
